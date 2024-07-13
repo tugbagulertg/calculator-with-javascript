@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="calculator.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="calculate-app">
+    <div class="calculator">
+
+      <div class="menu-bar">
+        <button class="menu-items red calculateOf">
+          <div class="show">x</div>
+        </button>
+        <button class="menu-items yellow calculateOf">
+          <div class="show">-</div>
+        </button>
+        <button class="menu-items green calculateOf">
+          <div class="show">+</div>
+        </button>
+      </div>
+
+      <input id="result" name="result" value="0" autocomplete="off" readonly autofocus />
+
+      <div class="calculate-area">
+        <button class="other" id="delResetButton" value="AC">AC</button>
+        <button class="other" value="+/-">
+          <div style="display: flex; flex-direction: row; ">
+            <span style="font-size: 12px; align-self: flex-start; ">+</span><span
+              style=" transform: rotate(20deg);">/</span><span
+              style="font-size: 14px; align-self: flex-end; margin-bottom: 1px;">-</span>
+          </div>
+
+        </button>
+        <button class="other" value="%">%</button>
+        <button class="operators " value="/">÷</button>
+        <button class="numbers" value="7">7</button>
+        <button class="numbers" value="8">8</button>
+        <button class="numbers" value="9">9</button>
+        <button class="operators " value="*">x</button>
+        <button class="numbers" value="4">4</button>
+        <button class="numbers" value="5">5</button>
+        <button class="numbers" value="6">6</button>
+        <button class="operators" value="-">−</button>
+        <button class="numbers" value="1">1</button>
+        <button class="numbers" value="2">2</button>
+        <button class="numbers" value="3">3</button>
+        <button class="operators" value="+">+</button>
+        <button class="numbers" value="0"
+          style="grid-column-start:1 ; grid-column-end: 3; border-bottom-left-radius: 12px;">0
+        </button>
+        <button class="numbers" id="decimal" value=",">,</button>
+        <button class="equal" id="equal" value="=" style="border-bottom-right-radius: 12px;">=</button>
+      </div>
+    </div>
+  </div>
+
+
+
+
+</body>
+<script type="text/javascript" lang="javascript" src="calculator.js"></script>
+
+</html>
